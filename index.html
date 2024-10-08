@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customize Your T-Shirt</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body bgcolor="#f0f8ff"> <!-- Light blue background -->
+
+    <h1 align="center">Welcome to TeeFusion</h1>
+    <p align="center">
+        At TeeFusion, we believe in the power of personalization. Whether you're creating a one-of-a-kind gift or expressing your unique style, our custom T-shirts allow you to bring your vision to life. Explore endless possibilities with our easy-to-use customization options and wear your story with pride.
+    </p>
+    
+    <!-- Form for customizing the t-shirt -->
+    <form action="#" onsubmit="return validateForm()">
+        <legend align="center"><h2>Customize Your T-Shirt:</h2></legend>
+        <table align="center" cellpadding="5">
+            <tr>
+                <td align="right"><label for="tagline">Tagline on the Shirt:</label></td>
+                <td align="left"><input type="text" id="tagline" name="tagline" placeholder="Enter your tagline" required /></td>
+            </tr>
+            <tr>
+                <td align="right"><label for="imageUpload">Upload Image or Logo:</label></td>
+                <td align="left"><input type="file" id="imageUpload" name="imageUpload" accept="image/*" /></td>
+            </tr>
+            <tr>
+                <td align="right"><label for="color">Color:</label></td>
+                <td align="left">
+                    <select id="color" name="color" required>
+                        <option value="">Select color</option>
+                        <option value="white">White</option>
+                        <option value="black">Black</option>
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                        <option value="yellow">Yellow</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="right"><label for="size">Size:</label></td>
+                <td align="left">
+                    <select id="size" name="size" required>
+                        <option value="">Select size</option>
+                        <option value="xs">XS</option>
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                        <option value="xl">XL</option>
+                        <option value="xxl">XXL</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="right"><label for="quantity">Quantity:</label></td>
+                <td align="left"><input type="number" id="quantity" name="quantity" min="1" max="100" required /></td>
+            </tr>
+            <tr>
+                <td align="right"><label for="deliveryDate">Delivery Date:</label></td>
+                <td align="left"><input type="date" id="deliveryDate" name="deliveryDate" required /></td>
+            </tr>
+        </table>
+        
+        <legend align="center"><h2>Delivery Details:</h2></legend>
+        <table align="center" cellpadding="5">
+            <tr>
+                <td align="right"><label for="name">Recipient's Name:</label></td>
+                <td align="left"><input type="text" id="name" name="name" placeholder="Full name" required /></td>
+            </tr>
+            <tr>
+                <td align="right"><label for="address">Address:</label></td>
+                <td align="left"><input type="text" id="address" name="address" placeholder="Delivery address" required /></td>
+            </tr>
+            <tr>
+                <td align="right"><label for="email">Email:</label></td>
+                <td align="left"><input type="email" id="email" name="email" placeholder="Email address" required /></td>
+            </tr>
+            <tr>
+                <td align="right"><label for="phone">Phone Number:</label></td>
+                <td align="left"><input type="tel" id="phone" name="phone" placeholder="Phone number" required /></td>
+            </tr>
+        </table>
+
+        <legend align="center"><h2>Additional Comments:</h2></legend>
+        <table align="center" cellpadding="5">
+            <tr>
+                <td align="right"><label for="comments">Additional Comments:</label></td>
+                <td align="left"><textarea id="comments" name="comments" placeholder="Any special instructions" rows="4"></textarea></td>
+            </tr>
+        </table>
+
+        <section align="center">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset Form</button>
+        </section>
+    </form>
+
+    <!-- JavaScript file -->
+    <script src="validation.js"></script>
+</body>
+</html>
